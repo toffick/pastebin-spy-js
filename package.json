@@ -1,0 +1,39 @@
+{
+  "name": "pastebin-spy",
+  "version": "1.0.0",
+  "description": "The monitor of paste on pastebin.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max_old_space_size=4096 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toffick/pastebin-spy-js.git"
+  },
+  "keywords": [
+    "spy",
+    "monitor",
+    "api",
+    "finder"
+  ],
+  "author": "toffick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toffick/pastebin-spy-js/issues"
+  },
+  "homepage": "https://github.com/toffick/pastebin-spy-js#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "better-queue": "^3.8.7",
+    "cheerio": "^1.0.0-rc.2",
+    "config": "^1.30.0",
+    "lodash": "^4.17.10",
+    "mysql2": "^1.5.3",
+    "needle": "^2.2.1",
+    "pastebin-js": "^0.5.1",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.37.10",
+    "xml2js": "^0.4.19"
+  }
+}
