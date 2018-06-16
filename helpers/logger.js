@@ -1,32 +1,32 @@
 class Logger {
-	constructor(module){
+	constructor(module) {
 		this.module = module;
 	}
 
 	/**
 	 *
 	 * @param {String} method
-	 * @param {Array<String>} message
+	 * @param {String} message
 	 */
-	error(method, ...message){
-		console.log(`ERROR: ${this.module} -> ${method} -> ${message.join(' ')}`)
+	error(method, ...message) {
+		console.log(new Date, `ERROR: ${this.module} -> ${method} -> ${message.join(' ')}`)
 	}
 
 	/**
 	 *
 	 * @param {String} method
-	 * @param {Array<String>} message
+	 * @param {String} message
 	 */
-	warn(method, ...message){
-		console.log(`WARN: ${this.module} -> ${method} -> ${message.join(' ')}`)
+	warn(method, ...message) {
+		console.log(new Date, `WARN: ${this.module} -> ${method} -> ${message.join(' ')}`)
 	}
 
 	/**
 	 *
-	 * @param {Array<String>} message
+	 * @param {String} message
 	 */
-	log(...message){
-		console.log(`INFO: ${message.join(' ')}`)
+	log(...message) {
+		console.log(new Date, `INFO: ${message.join(' ')}`)
 	}
 }
 

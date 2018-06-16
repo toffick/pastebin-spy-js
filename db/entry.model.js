@@ -5,7 +5,8 @@ module.exports = (Sequelize, sequelize) => {
 			primaryKey: true,
 			autoIncrement: true
 		},
-		content: {type: Sequelize.TEXT('medium')},
-		entryId: {type: Sequelize.STRING}
+		content: { type: Sequelize.TEXT('medium') },
+		contentFlag: { type: Sequelize.STRING },
+		entryId: { type: Sequelize.STRING }
 	});
 };
